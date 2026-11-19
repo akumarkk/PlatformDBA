@@ -1,0 +1,11 @@
+dbca -silent -createDatabase ^
+  -templateName General_Purpose.dbc ^
+  -gdbname orcl -sid orcl ^
+  -sysPassword  ^
+  -systemPassword  ^
+  -createAsContainerDatabase true ^
+  -numberOfPDBs 1 -pdbName pdborcl ^
+  -pdbAdminPassword <> ^
+  -emConfiguration NONE ^
+  -storageType FS ^
+  -datafileDestination "D:\app\oracle\oradata"
