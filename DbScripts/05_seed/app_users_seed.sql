@@ -1,3 +1,6 @@
+--liquibase formatted sql
+--changeset platform-dba:app_users_seed runOnChange:true
+
 MERGE INTO app_users t
 USING (SELECT 'alice' AS username FROM dual UNION ALL SELECT 'bob' FROM dual) s
 ON (t.username = s.username)
