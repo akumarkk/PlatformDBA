@@ -1,0 +1,16 @@
+databaseChangeLog:
+  - includeAll:
+      path: ../../DbScripts/01_tables
+      relativeToChangelogFile: true
+  - includeAll:
+      path: ../../DbScripts/02_indexes
+      relativeToChangelogFile: true
+  - includeAll:
+      path: ../../DbScripts/03_views
+      relativeToChangelogFile: true
+  - includeAll:
+      path: ../../DbScripts/04_packages
+      relativeToChangelogFile: true
+  - includeAll:
+      path: ../../DbScripts/05_seed
+      relativeToChangelogFile: true
